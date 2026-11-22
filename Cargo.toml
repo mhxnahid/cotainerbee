@@ -1,0 +1,21 @@
+[package]
+name = "containerbee"
+version = "0.1.0"
+edition = "2021"
+description = "A lightweight Docker TUI: containers, images, volumes, networks, files, logs, stats, compose"
+license = "AGPL-3.0-only"
+repository = "https://github.com/mhxnahid/cotainerbee"
+
+[dependencies]
+ratatui = "0.29"
+serde_json = "1"
+regex-lite = "0.1"
+tar = { version = "0.4", default-features = false }
+flate2 = { version = "1", default-features = false, features = ["rust_backend"] }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"

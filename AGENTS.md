@@ -1,0 +1,11 @@
+## Agent Rules
+- don't push to remote if not asked
+- write very short and human friendly commit/PR message. don't sign off as agent
+- whenever there's a query, ask me, don't assume
+- if a dependency, permission or port blocker arises, ask me instead of trying to find workaround on your own
+- always use locked version of dependencies.
+- prefer well established plugins over hand rolling complex code.
+- emphasis on human readability.
+- avoid writting comments if possible. write very short and precise if needd; technical precise comment in code, but user-facing text in UI should be user facing.
+- All SQL must be STRICT mode compatible.
+- Don't write pointless tests. Tests should actually mean something. Minor tests should be written and deleted before commiting.
